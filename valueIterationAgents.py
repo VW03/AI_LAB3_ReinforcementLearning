@@ -62,9 +62,9 @@ class ValueIterationAgent(ValueEstimationAgent):
     def runValueIteration(self):
         # Write value iteration code here
         "*** YOUR CODE HERE ***"
-        states = self.mdp.getStates()
+        states = self.mdp.getStates()                                       # Store a list of the possible states
 
-        for _ in range(self.iterations):
+        for _ in range(self.iterations):                                    #
             next_values = util.Counter()
 
             for state in states:
@@ -116,17 +116,15 @@ class ValueIterationAgent(ValueEstimationAgent):
           terminal state, you should return None.
         """
         "*** YOUR CODE HERE ***"
+        actions = self.mdp.getPossibleActions(state)
 
-        def computeActionFromValues(self, state):
-            actions = self.mdp.getPossibleActions(state)
+        if not actions:
+            return None
 
-            if not actions:
-                return None
-
-            return max(
-                actions,
-                key=lambda action: self.computeQValueFromValues(state, action)
-            )
+        return max(
+            actions,
+            key=lambda action: self.computeQValueFromValues(state, action)
+        )
 
     def getPolicy(self, state):
         return self.computeActionFromValues(state)
