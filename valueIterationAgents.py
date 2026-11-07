@@ -95,16 +95,15 @@ class ValueIterationAgent(ValueEstimationAgent):
           value function stored in self.values.
         """
         "*** YOUR CODE HERE ***"
-        q_value = 0.0
+        q_value = 0.0                                                                           # The init of our q value within our function call.
 
-        for next_state, probability in self.mdp.getTransitionStatesAndProbs(state, action):
-            reward = self.mdp.getReward(state, action, next_state)
-
+        for next_state, probability in self.mdp.getTransitionStatesAndProbs(state, action):     # For each state and action combo received by getTransitionStatesAndProbs, we split our received tuple into two separate variables to use within our loop.
+            reward = self.mdp.getReward(state, action, next_state)                              # We calculate the reward using the next_state that we extracted out of our tuple, and also our state and action variables.
             q_value += probability * (
-                    reward + self.discount * self.values[next_state]
+                    reward + self.discount * self.values[next_state]                            # We calculate the q-value of the desired action by using our probability, the value of our next_state, the discount and the previously calculated reward.
             )
 
-        return q_value
+        return q_value                                                                          # Return the calculated q-value
 
     def computeActionFromValues(self, state):
         """
@@ -116,12 +115,12 @@ class ValueIterationAgent(ValueEstimationAgent):
           terminal state, you should return None.
         """
         "*** YOUR CODE HERE ***"
-        actions = self.mdp.getPossibleActions(state)
+        actions = self.mdp.getPossibleActions(state)                                # We put all the possible actions in an actions-variable
 
-        if not actions:
+        if not actions:                                                             # If there are no actions, then we return from the function with "None"
             return None
 
-        return max(
+        return max(                                                                 # If there are values in action, then for each action we calculate the q-value, after which we return the action which has the highest q-value.
             actions,
             key=lambda action: self.computeQValueFromValues(state, action)
         )
