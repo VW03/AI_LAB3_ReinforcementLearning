@@ -64,22 +64,22 @@ class ValueIterationAgent(ValueEstimationAgent):
         "*** YOUR CODE HERE ***"
         states = self.mdp.getStates()                                       # Store a list of the possible states
 
-        for _ in range(self.iterations):                                    #
-            next_values = util.Counter()
+        for _ in range(self.iterations):                                    # We run the loop for the amount of time that is specified in the constructor
+            next_values = util.Counter()                                    # We create a new empty counter, which we will fill in during our for loop
 
-            for state in states:
-                if self.mdp.isTerminal(state):
-                    continue
+            for state in states:                                            # For each state in states
+                if self.mdp.isTerminal(state):                              # If the state we get are checking is the end-state (meaning we get a "true" value back)
+                    continue                                                # Then we skip the code for this state in particular, and continue to the next state in the states list
 
-                actions = self.mdp.getPossibleActions(state)
+                actions = self.mdp.getPossibleActions(state)                # Get all the possible actions for the state which we are checking out at the moment
 
-                if actions:
-                    next_values[state] = max(
-                        self.computeQValueFromValues(state, action)
+                if actions:                                                 # We check if there are any actions available, else we skip this code block
+                    next_values[state] = max(                               # Now we compute the values for each action within our possible actions for our states,
+                        self.computeQValueFromValues(state, action)         # and then we store only the highest value into the "next_vales"
                         for action in actions
                     )
 
-            self.values = next_values
+            self.values = next_values                                       # We store the calculated values for each square in the grid, into the main "values" variable
 
 
     def getValue(self, state):

@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="350fe0e6-060d-4084-80c3-cfa8647e0283" name="Changes" comment="LOL">
-      <change beforePath="$PROJECT_DIR$/.idea/AI_LAB3_ReinforcementLearning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AI_LAB3_ReinforcementLearning.iml" afterDir="false" />
+    <list default="true" id="350fe0e6-060d-4084-80c3-cfa8647e0283" name="Changes" comment="fixed double def for computeActionFromValues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graphicsUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphicsUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/valueIterationAgents.py" beforeDir="false" afterPath="$PROJECT_DIR$/valueIterationAgents.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,23 +42,23 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0" />
-      <entry key="M5" value="1.0" />
-      <entry key="M10" value="1.0" />
-      <entry key="M15" value="1.0" />
-      <entry key="M30" value="1.0" />
-      <entry key="H1" value="1.0" />
-      <entry key="H2" value="1.0" />
-      <entry key="H4" value="1.0" />
-      <entry key="D1" value="1.0" />
-      <entry key="W1" value="1.0" />
+      <entry key="MS100" value="1.0000000029636043" />
+      <entry key="MS500" value="1.0198492988421268" />
+      <entry key="S2" value="1.5946823202006999" />
+      <entry key="S5" value="3.2435235396914237" />
+      <entry key="S10" value="6.073273275414877" />
+      <entry key="S30" value="14.795282254694929" />
+      <entry key="S60" value="25.779970844363504" />
+      <entry key="M2" value="44.665538178932884" />
+      <entry key="M5" value="87.39734979779286" />
+      <entry key="M10" value="131.22156805008453" />
+      <entry key="M15" value="156.6421337959731" />
+      <entry key="M30" value="192.3030484588698" />
+      <entry key="H1" value="215.65618468230994" />
+      <entry key="H2" value="229.12780232359242" />
+      <entry key="H4" value="236.3781123228444" />
+      <entry key="D1" value="242.7029115739818" />
+      <entry key="W1" value="243.8140328929503" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -82,23 +80,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.5471468506303697" />
-      <entry key="MS500" value="0.8863816991948673" />
-      <entry key="S2" value="0.9702981317828073" />
-      <entry key="S5" value="0.9880116785180375" />
-      <entry key="S10" value="0.9939877657788538" />
-      <entry key="S30" value="0.99799189212829" />
-      <entry key="S60" value="0.9989954414952502" />
-      <entry key="M2" value="0.999497594542003" />
-      <entry key="M5" value="0.9997990075193333" />
-      <entry key="M10" value="0.9998994987094119" />
-      <entry key="M15" value="0.999932998017279" />
-      <entry key="M30" value="0.9999664984474624" />
-      <entry key="H1" value="0.9999832490834346" />
-      <entry key="H2" value="0.9999916245066429" />
-      <entry key="H4" value="0.9999958122445528" />
-      <entry key="D1" value="0.9999993020395409" />
-      <entry key="W1" value="0.9999999002913331" />
+      <entry key="MS100" value="0.9592641221485065" />
+      <entry key="MS500" value="1.0113737221824592" />
+      <entry key="S2" value="1.590968619910509" />
+      <entry key="S5" value="3.240053126310877" />
+      <entry key="S10" value="6.069881931110399" />
+      <entry key="S30" value="14.792484182757574" />
+      <entry key="S60" value="25.777495312768252" />
+      <entry key="M2" value="44.66335525071973" />
+      <entry key="M5" value="87.3956231970756" />
+      <entry key="M10" value="131.2202610423537" />
+      <entry key="M15" value="156.64108616320158" />
+      <entry key="M30" value="192.30239722775636" />
+      <entry key="H1" value="215.6558160581215" />
+      <entry key="H2" value="229.1276053669419" />
+      <entry key="H4" value="236.37801040536266" />
+      <entry key="D1" value="242.7028940842213" />
+      <entry key="W1" value="243.81403038172837" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -144,6 +142,23 @@
       <option name="presentableId" value="Default" />
       <updated>1793959956272</updated>
     </task>
+    <task id="LOCAL-00001" summary="exercise 1 before comments">
+      <option name="closed" value="true" />
+      <created>1793963591019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1793963591020</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed double def for computeActionFromValues">
+      <option name="closed" value="true" />
+      <created>1793963765810</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1793963765810</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +166,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="LOL" />
-    <option name="LAST_COMMIT_MESSAGE" value="LOL" />
+    <MESSAGE value="exercise 1 before comments" />
+    <MESSAGE value="fixed double def for computeActionFromValues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed double def for computeActionFromValues" />
   </component>
 </project>
