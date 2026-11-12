@@ -1,33 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="350fe0e6-060d-4084-80c3-cfa8647e0283" name="Changes" comment="" />
+    <list default="true" id="350fe0e6-060d-4084-80c3-cfa8647e0283" name="Changes" comment="finished commenting within the code for exercise 1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="42" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Alec-99&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/VW03/AI_LAB3_ReinforcementLearning.git&quot;,
+    &quot;accountId&quot;: &quot;60d1c8f9-ac19-44bd-a2a6-a289c714b54f&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0000000029636043" />
+      <entry key="MS500" value="1.0198492988421268" />
+      <entry key="S2" value="1.5946823202006999" />
+      <entry key="S5" value="3.2435235396914237" />
+      <entry key="S10" value="6.073273275414877" />
+      <entry key="S30" value="14.795282254694929" />
+      <entry key="S60" value="25.779970844363504" />
+      <entry key="M2" value="44.665538178932884" />
+      <entry key="M5" value="87.39734979779286" />
+      <entry key="M10" value="131.22156805008453" />
+      <entry key="M15" value="156.6421337959731" />
+      <entry key="M30" value="192.3030484588698" />
+      <entry key="H1" value="215.65618468230994" />
+      <entry key="H2" value="229.12780232359242" />
+      <entry key="H4" value="236.3781123228444" />
+      <entry key="D1" value="242.7029115739818" />
+      <entry key="W1" value="243.8140328929503" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9592641221485065" />
+      <entry key="MS500" value="1.0113737221824592" />
+      <entry key="S2" value="1.590968619910509" />
+      <entry key="S5" value="3.240053126310877" />
+      <entry key="S10" value="6.069881931110399" />
+      <entry key="S30" value="14.792484182757574" />
+      <entry key="S60" value="25.777495312768252" />
+      <entry key="M2" value="44.66335525071973" />
+      <entry key="M5" value="87.3956231970756" />
+      <entry key="M10" value="131.2202610423537" />
+      <entry key="M15" value="156.64108616320158" />
+      <entry key="M30" value="192.30239722775636" />
+      <entry key="H1" value="215.6558160581215" />
+      <entry key="H2" value="229.1276053669419" />
+      <entry key="H4" value="236.37801040536266" />
+      <entry key="D1" value="242.7028940842213" />
+      <entry key="W1" value="243.81403038172837" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3LjGEvah1lrWVWEkiqRVIitLo5f" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;alec&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-ce6832f46686-7b97d883f26b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.25557.178" />
+        <option value="bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92" />
       </set>
     </attachedChunks>
   </component>
@@ -39,6 +141,41 @@
       <option name="presentableId" value="Default" />
       <updated>1793959956272</updated>
     </task>
+    <task id="LOCAL-00001" summary="exercise 1 before comments">
+      <option name="closed" value="true" />
+      <created>1793963591019</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1793963591020</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed double def for computeActionFromValues">
+      <option name="closed" value="true" />
+      <created>1793963765810</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1793963765810</updated>
+    </task>
+    <task id="LOCAL-00003" summary="finished commenting within the code for exercise 1">
+      <option name="closed" value="true" />
+      <created>1794062136730</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1794062136730</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="LOL" />
+    <MESSAGE value="exercise 1 before comments" />
+    <MESSAGE value="fixed double def for computeActionFromValues" />
+    <MESSAGE value="finished commenting within the code for exercise 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished commenting within the code for exercise 1" />
   </component>
 </project>

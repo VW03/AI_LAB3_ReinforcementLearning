@@ -205,15 +205,30 @@ def circle(pos, r, outlineColor, fillColor, endpoints=None, style='pieslice', wi
     x, y = pos
     x0, x1 = x - r - 1, x + r
     y0, y1 = y - r - 1, y + r
-    if endpoints == None:
-        e = [0, 359]
-    else:
-        e = list(endpoints)
-    while e[0] > e[1]:
-        e[1] = e[1] + 360
 
-    return _canvas.create_arc(x0, y0, x1, y1, outline=outlineColor, fill=fillColor,
-                              extent=e[1] - e[0], start=e[0], style=style, width=width)
+    # Volledige cirkel
+    if endpoints is None:
+        return _canvas.create_oval(
+            x0, y0, x1, y1,
+            outline=outlineColor,
+            fill=fillColor,
+            width=width
+        )
+
+    # Gedeeltelijke cirkel (originele functionaliteit)
+    e = list(endpoints)
+    while e[0] > e[1]:
+        e[1] += 360
+
+    return _canvas.create_arc(
+        x0, y0, x1, y1,
+        outline=outlineColor,
+        fill=fillColor,
+        extent=e[1] - e[0],
+        start=e[0],
+        style=style,
+        width=width
+    )
 
 
 def image(pos, file="../../blueghost.gif"):
