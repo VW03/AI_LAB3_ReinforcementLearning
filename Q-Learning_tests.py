@@ -1,74 +1,3 @@
-import numpy as np
-import matplotlib.pyplot as plt
-
-n_states = 16
-n_actions = 4
-goal_state = 15
-
-Q_table = np.zeros((n_states, n_actions))
-
-learning_rate = 0.8
-discount_factor = 0.95
-exploration_prob = 0.2
-epochs = 1000
-
-def get_next_state(state, action):
-    row, col = divmod(state, 4)
-
-    if action == 0 and col > 0:
-        col -= 1
-    elif action == 1 and col < 3:
-        col += 1
-    elif action == 2 and row > 0:
-        row -= 1
-    elif action == 3 and row < 3:
-        row += 1
-
-    return row * 4 + col
-
-for epoch in range(epochs):
-    current_state = np.random.randint(0, n_states)
-
-    while True:
-        if np.random.rand() < exploration_prob:
-            action = np.random.randint(0, n_actions)
-        else:
-            action = np.argmax(Q_table[current_state])
-
-        next_state = get_next_state(current_state, action)
-
-        reward = 1 if next_state == goal_state else 0
-
-        Q_table[current_state, action] += learning_rate * (
-            reward + discount_factor * np.max(Q_table[next_state]) - Q_table[current_state, action]
-        )
-
-        if next_state == goal_state:
-            break
-
-        current_state = next_state
-
-q_values_grid = np.max(Q_table, axis=1).reshape((4, 4))
-
-plt.figure(figsize=(6, 6))
-plt.imshow(q_values_grid, cmap='coolwarm', interpolation='nearest')
-plt.colorbar(label='Q-value')
-plt.title('Learned Q-values for Each State')
-plt.xticks(np.arange(4), ['0', '1', '2', '3'])
-plt.yticks(np.arange(4), ['0', '1', '2', '3'])
-plt.gca().invert_yaxis()
-plt.grid(True)
-
-for i in range(4):
-    for j in range(4):
-        plt.text(j, i, f'{q_values_grid[i, j]:.2f}', ha='center', va='center', color='black')
-plt.savefig('Q-Learning-Tests.png')
-plt.show()
-
-
-print("Learned Q-table:")
-print(Q_table)
-
 """
 Exercise 4: Q-Learning
 
@@ -304,4 +233,39 @@ EPISODE 100 COMPLETE: RETURN WAS 0.43046721000000016
 
 
 AVERAGE RETURNS FROM START STATE: 0.3410317777972642
+
+
+
+Reinforcement Learning Status:
+        Completed 2000 out of 2000 training episodes
+        Average Rewards over all training: -49.76
+        Average Rewards for last 100 episodes: 166.59
+        Episode took 1.08 seconds
+Training Done (turning off epsilon and alpha)
+---------------------------------------------
+Pacman emerges victorious! Score: 495
+Pacman emerges victorious! Score: 503
+Pacman emerges victorious! Score: 495
+Pacman emerges victorious! Score: 503
+Pacman emerges victorious! Score: 503
+Pacman emerges victorious! Score: 503
+Pacman emerges victorious! Score: 499
+Pacman emerges victorious! Score: 503
+Pacman emerges victorious! Score: 495
+Pacman emerges victorious! Score: 499
+Average Score: 499.8
+Scores:        495.0, 503.0, 495.0, 503.0, 503.0, 503.0, 499.0, 503.0, 495.0, 499.0
+Win Rate:      10/10 (1.00)
+Record:        Win, Win, Win, Win, Win, Win, Win, Win, Win, Win
+
+((.venv) ) python pacman.py -p PacmanQAgent -x 2000 -n 2010 -l smallGrid
+Average Score: 499.8
+Scores:        499.0, 495.0, 499.0, 503.0, 503.0, 495.0, 503.0, 503.0, 503.0, 495.0
+Win Rate:      10/10 (1.00)
+Record:        Win, Win, Win, Win, Win, Win, Win, Win, Win, Win
+((.venv) ) python pacman.py -p PacmanQAgent -x 2000 -n 2010 -l mediumGrid
+Average Score: -511.9
+Scores:        -496.0, -488.0, -488.0, -490.0, -494.0, -516.0, -590.0, -543.0, -495.0, -519.0
+Win Rate:      0/10 (0.00)
+Record:        Loss, Loss, Loss, Loss, Loss, Loss, Loss, Loss, Loss, Loss
 """
